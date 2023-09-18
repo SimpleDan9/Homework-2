@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --playfair:'Playfair Display', serif;
+    --raleway:'Raleway', sans-serif;
+    --title-color:#D4C17F;
+    --body-color:#242B33;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 840px;
+    background: url(./images/header-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* navigation starts here */
+nav{
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p{
+    color: #FFF;
+    font-family: var(--raleway);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    margin-top: 10px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    cursor: pointer;
+    color: #FFF;
+    font-family: var(--raleway);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    padding-left: 40px;
+    transition: all .5s ease;
+}
+.nav-list li:hover{
+    opacity: 0.6;
+}
+/* hero start here */
+
+.hero{
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hero-content{
+    width: 582px;
+    margin-top: 180px;
+}
+.hero-title{
+    color: var(--title-color);
+    text-align: center;
+    font-family: var(--playfair);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.mause{
+    cursor: pointer;
+    margin-top: 100px;
+    transition: all .5s linear;
+}
+.mause:hover{
+    transform: rotate(360deg);
+}
+.hero-contact{
+    margin-top: 180px;
+    display: flex;
+    gap: 100px;
+}
+.hero-location{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hero-location p{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--raleway);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hero-phone{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hero-phone p{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--raleway);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* stat of building section */
+.building{
+    padding: 120px 0;
+    width: 100%;
+    background: var(--body-color);
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+.building-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.building-list{
+    display: flex;
+    width: 794px;
+}
+.building-bg{
+    position: absolute;
+    width: 301px;
+    height: 507px;
+    top: 20%;
+    right: 8%;
+    
+}
+.building-item{
+    text-align: center;
+    margin-right: 70px;
+}
+.building-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    margin-top: 50px;
+}
+/* start of gallery */
+.gallery{
+    width: 100%;
+    background: var(--body-color);
+    position: relative;
+    
+}
+.gallery-title{
+    font-family:var(--playfair);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--title-color);
+}
+.gallery-list{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.gallery-item{
+    position: relative;
+    width: 535px;
+    height: 320px;
+}
+.gallery-item_info{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #FFF;
+}
+.gallery-bg-img{
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+/* registration section */
+.registration{
+    width: 100%;
+    background: url(./images/registration-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.registration-title{
+    font-family:var(--playfair);
+    color: var(--title-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 180px;
+}
+.registration-info{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 180px;
+}
+.registration-text{
+    width: 535px;
+    color: #FFF;
+    font-family: var(--raleway);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.registration-steps{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.box{
+    width: 255px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    background: #FFF;
+}
+.no-bg{
+    background: transparent;
+    color: #E7E7E7;
+    text-align: center;
+    font-family: var(--raleway);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}
+.yellow{
+    background: #f7c922;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+/* video section */
+.video{
+    width: 100%;
+    background: #242B33;
+    position: relative;
+}
+.video-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.video-img{
+    width: 719px;
+    height: 650px;
+    position: relative;
+}
+.play-button{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+.play-button:hover{
+   transform:scale(1.1);
+}
+.video-bg-img{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+/* region section */
+.region{
+    padding-top: 180px;
+    width: 100%;
+    background: var(--body-color);
+    position: relative;
+}
+.region-title{
+    font-family: var(--playfair);
+    color: var(--title-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.grey-box{
+    margin-top: 100px;
+    width: 100%;
+    height: 358px;
+    background:#626262;
+    
+}
+.region-bg-img{
+    position: absolute;
+    top: 22%;
+    left: 4%;
+    z-index: 0;
+}
+/* question section */
+.questions{
+    padding: 180px 0;
+}
+.question-title{
+    font-family: var(--playfair);
+    color: var(--title-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.question-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.question-list li{
+    margin-top: 60px;
+    width: 255px;
+    opacity: 0.2;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a09a9a;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+.question-item.one{
+    color: #E7E7E7;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    background: transparent;
+}
+.question-item.yellow{
+    background: #f7c922;
+    color: #FFF;
+}
+/* footer section */
+footer{
+    width: 100%;
+    background: #2D343C;
+}
+.footer-content{
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    display: grid;
+    row-gap: 15px;
+}
+.footer-list li{
+    color: #FFF;
+    font-family: var(--raleway);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+}
+.footer-contact{
+    display: grid;
+    row-gap: 15px;
+}
+.footer-contact p{
+    color: #FFF;
+    font-family: var(--raleway);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px
+}
+.footer-contact span{
+    color: #D4C17F;
+}
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+.social-links img:hover{
+    transform: translateY(-10px);
+}
+.social-links img{
+    transition: all .6s linear;
+}
